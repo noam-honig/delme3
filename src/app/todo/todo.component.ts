@@ -35,7 +35,6 @@ export class TodoComponent implements OnInit {
     localStorage.setItem("tasks",
       JSON.stringify(this.tasks));
   }
-
 }
 interface Task {
   title: string;
