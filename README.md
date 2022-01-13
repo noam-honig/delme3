@@ -16,3 +16,7 @@ ng new angular-intro
 * Create angular components, and routes.
 * Style using Angular Material
 * Create an in browser todo app, using local storage
+
+
+# Questions:
+1. 
