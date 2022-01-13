@@ -13,6 +13,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 
@@ -25,6 +27,7 @@ import {MatInputModule} from '@angular/material/input';
   ],
   imports: [
     MatInputModule,
+    MatIconModule,
     FormsModule,
     MatListModule,
     MatCheckboxModule,

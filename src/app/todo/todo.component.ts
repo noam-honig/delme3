@@ -25,9 +25,11 @@ export class TodoComponent implements OnInit {
   addTask() {
     this.tasks.push({ title: this.title });
     this.title = '';
+    this.save();
   }
   remove(task: Task) {
     this.tasks = this.tasks.filter(t => task != t);
+    this.save();
   }
   save() {
     localStorage.setItem("tasks",
