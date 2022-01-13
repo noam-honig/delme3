@@ -1,11 +1,16 @@
 <mat-card style="margin:12px">
+    <mat-form-field appearance="standard">
+        <mat-label>New task title</mat-label>
+        <input matInput [(ngModel)]="title">
+    </mat-form-field>
+    <button mat-button (click)="addTask()">Add</button>
     <p>{{title}} {{1+1}}</p>
     <mat-list role="list">
         <mat-list-item role="listitem" *ngFor="let task of tasks">
             <mat-checkbox [(ngModel)]="task.completed" (change)="save()">
                 {{task.title}}
             </mat-checkbox>
-
+            <button mat-button (click)="remove(task)"> remove</button>
         </mat-list-item>
 
     </mat-list>

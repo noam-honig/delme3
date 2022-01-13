@@ -22,6 +22,13 @@ export class TodoComponent implements OnInit {
     if (storedTasks)
       this.tasks = JSON.parse(storedTasks);
   }
+  addTask() {
+    this.tasks.push({ title: this.title });
+    this.title = '';
+  }
+  remove(task: Task) {
+    this.tasks = this.tasks.filter(t => task != t);
+  }
   save() {
     localStorage.setItem("tasks",
       JSON.stringify(this.tasks));

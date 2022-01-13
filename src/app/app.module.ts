@@ -12,6 +12,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 
@@ -22,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     TodoComponent
   ],
   imports: [
+    MatInputModule,
     FormsModule,
     MatListModule,
     MatCheckboxModule,
