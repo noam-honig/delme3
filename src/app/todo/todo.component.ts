@@ -8,8 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class TodoComponent implements OnInit {
 
   constructor() { }
+  title: string = 'The Title';
+  tasks: Task[] = [
+    { title: "Task 1" },
+    { title: "Task 2", completed: true },
+    { title: "Task 3" },
+    { title: "Task 4" }
+  ];
 
   ngOnInit(): void {
+    console.log(this.tasks);
   }
 
+}
+interface Task {
+  title: string;
+  completed?: boolean;
 }
