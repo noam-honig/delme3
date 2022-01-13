@@ -2,7 +2,7 @@
     <p>{{title}} {{1+1}}</p>
     <mat-list role="list">
         <mat-list-item role="listitem" *ngFor="let task of tasks">
-            <mat-checkbox [(ngModel)]="task.completed">
+            <mat-checkbox [(ngModel)]="task.completed" (change)="save()">
                 {{task.title}}
             </mat-checkbox>
 
