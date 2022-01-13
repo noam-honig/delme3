@@ -10,6 +10,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -19,7 +22,9 @@ import {MatListModule} from '@angular/material/list';
     TodoComponent
   ],
   imports: [
+    FormsModule,
     MatListModule,
+    MatCheckboxModule,
     BrowserModule,
     MatToolbarModule,
     MatCardModule,
